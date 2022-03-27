@@ -1,0 +1,18 @@
+body, header, article, div, section {
+    border: black solid 1px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+    grid-column: 2/5;
+}
+
+.two {
+
+}
