@@ -7,31 +7,34 @@
         <title></title>
     </head>
     <body class="wrapper">
-        <header class="one">
+        <header class="column-one">
             <h1>TITLE</h1>
             <section class="nav">
                 <ul>
-                    <li>HOME</li>
-                    <li>ABOUT US</li>
-                    <li>CONTACT</li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT</a></li>
                 </ul>
             </section>
         </header>
-        <article class="one">
-            <h2>Saturday, March 26, 2021</h2>
-            <h2>POST TITLE</h2>
-            <img src="img/test-image.jpg" alt="">
-            <div class="comment-block">
+        <article class="column-one row-one">
+            <div class="row-two title-block">
+                <h2>Saturday, March 26, 2021</h2>
+                <h2>POST TITLE</h2>
+                <img src="img/test-image.jpg" alt="">
+            </div>
+            <div class="row-three comment-block">
                 <div id="btn-comment">Comment</div>
                 <div class="comment">
                     <ul>
-                        <li>Jane Doe</li>
-                        <li>
+                        <li id="comment-user">Jane Doe</li>
+                        <li id="comment-text">
                             <p>Relly like this post!</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </article>
+        <div class="row-three float-button">Add a new post</div>
     </body>
 </html>

@@ -7,13 +7,36 @@ body, header, article, div, section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    /* grid-auto-rows: minmax(100px, auto); */
+    grid-auto-rows: repeat(3, 1fr);
 }
 
-.one {
+.nav ul li {
+    display: inline-block;
+    list-style: none;
+    border: 1px solid #000;
+    margin: 5px; 
+    padding: 2px;
+}
+
+.column-one {
     grid-column: 2/5;
 }
 
-.two {
+.row-one {
+    grid-row: 2/3;
+}
 
+.row-two {
+    grid-row: 2;
+}
+
+.row-three {
+    grid-row: 3;
+}
+
+.float-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
 }
