@@ -61,3 +61,47 @@ body, header, article, div, section {
 html {
     background-color: #FFFDF7;
 }
+
+.button, .float-button {
+    background-color: #F2E9E4;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5%;
+    font-weight: bold;
+    border-color: black;
+}
+
+.comment ul li {
+    list-style-type: none;
+}
+
+#comment-user {
+    font-weight: bold;
+}
+
+.comment {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+
+.info {
+    text-align: left;
+}
+
+#ig, #twitter, #fb {
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding-left: 50px;
+}
+
+
+
+
+    
