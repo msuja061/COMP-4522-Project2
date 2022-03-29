@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="style/style.css" />
-        <script type="text/javascript" src="script/script.js"></script>
-        <title></title>
-    </head>
-    <body class="wrapper">
-        <header class="column-one">
-            <h1>TITLE</h1>
-            <section class="nav">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script type="text/javascript" src="script/script.js"></script>
+    <title>Welcome to the Blog!</title>
+
+</head>
+
+<body class="wrapper">
+    <header class="column-one">
+        <h1>All Things New</h1>
+        <section class="nav">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </section>
+    </header>
+    <article class="column-one row-one">
+        <div class="row-two title-block">
+            <h2>Saturday, March 26, 2021</h2>
+            <h2><i>Weekly collection of dog photos</i></h2>
+            <img src="img/test-image.jpg" class="dog" alt="">
+        </div>
+        <div class="row-three comment-block">
+            <div id="btn-comment">Comment</div>
+            <div class="comment">
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li id="comment-user">Jane Doe</li>
+                    <li id="comment-text">
+                        <p>Really like this post!</p>
+                    </li>
                 </ul>
-            </section>
-        </header>
-        <article class="column-one row-one">
-            <div class="row-two title-block">
-                <h2>Saturday, March 26, 2021</h2>
-                <h2>POST TITLE</h2>
-                <img src="img/test-image.jpg" alt="">
             </div>
-            <div class="row-three comment-block">
-                <div id="btn-comment">Comment</div>
-                <div class="comment">
-                    <ul>
-                        <li id="comment-user">Jane Doe</li>
-                        <li id="comment-text">
-                            <p>Relly like this post!</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </article>
-        <div class="row-three float-button">Add a new post</div>
-    </body>
+        </div>
+    </article>
+    <div class="row-three float-button"><b>Add a new post</b></div>
+</body>
+
 </html>

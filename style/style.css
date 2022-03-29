@@ -1,5 +1,4 @@
 body, header, article, div, section {
-    border: black solid 1px;
     text-align: center;
 }
 
@@ -14,7 +13,6 @@ body, header, article, div, section {
 .nav ul li {
     display: inline-block;
     list-style: none;
-    border: 1px solid #000;
     margin: 5px; 
     padding: 2px;
 }
@@ -39,4 +37,27 @@ body, header, article, div, section {
     position: fixed;
     bottom: 50px;
     right: 50px;
+}
+
+.navbar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+}
+
+.navbar a{
+    display: flex;
+    justify-content: space-around;
+    margin-right: var(--common-padding);
+    color: var(--main-text-color);
+}
+
+.dog {
+    width: 500px;
+    height: 500px;
+}
+
+html {
+    background-color: #FFFDF7;
 }
