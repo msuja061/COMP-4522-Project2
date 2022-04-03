@@ -3,25 +3,49 @@
 
 <head>
     <meta charset="utf-8">
+    
+    <!-- Import CSS -->
+    <link rel="stylesheet" type="text/css" href="style/reset.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <!-- Import JavaScript -->
     <script type="text/javascript" src="script/script.js"></script>
+    <!-- Import Fonts -->
+    <!-- Header/Footer Font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> -->
+    <!-- Article Font -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> -->
+
     <title>Contact Us</title>
 
+    <!-- <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script type="text/javascript" src="script/script.js"></script> -->
 </head>
 
 <body>
-    <header class="column-one">
-        <h1>All Things New</h1>
-        <section class="nav">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+    <header class="page-header p-5 text-center bg-light">
+        <h1 class="mb-4">All Things New</h1>
+        <section class="navbar-header">
+            <ul class="list-inline list-menu">
+                <li class="list-inline-item"><a href="index.html">HOME</a></li>
+                <li class="list-inline-item"><a href="about.html">ABOUT US</a></li>
+                <li class="list-inline-item"><a href="contact.html">CONTACT</a></li>
             </ul>
         </section>
     </header>
-    <form>
-        <label for="first">First Name</label><br>
-        <input type="text" name="fname"><br>
-    </form>
+    <article class="container-fluid article">
+        <form>
+            <label for="first">First Name</label><br>
+            <input type="text" name="fname"><br>
+        </form>
+    </article>
+    <footer></footer>
+
+    <!-- Optional JavaScript must be at the bottom of the body -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jsLibs/jquery-3.0.0.min.js"></script>
+    <script src="jsLibs/popper.min.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 </body>
+</html>

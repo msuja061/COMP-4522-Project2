@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script type="text/javascript" src="script/script.js"></script>
+    <title>Welcome to the Blog!</title>
+
+</head>
+
+<body class="wrapper">
+    <header class="column-one">
+        <h1>All Things New</h1>
+        <section class="nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </section>
+    </header>
+    <article class="column-one row-one">
+        <div class="row-two title-block">
+            <h2>
+                <div id="current_date">
+                    </p>
+                    <script>
+                        date = new Date();
+                        year = date.getFullYear();
+                        month = date.getMonth() + 1;
+                        day = date.getDate();
+                        document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+                    </script>
+            </h2>
+            <h2><i>Weekly collection of dog photos</i></h2>
+            <img src="img/test-image.jpg" class="dog" alt="">
+        </div>
+        <div class="row-three comment-block">
+            <button class="button">Comment</button>
+            <div class="comment">
+                <ul>
+                    <li id="comment-user">Jane Doe</li>
+                    <li id="comment-text">
+                        <p>Really like this post!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    <div class="row-three float-button"><b>Add a new post</b></div>
+</body>
+
+</html>
