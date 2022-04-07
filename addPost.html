@@ -17,7 +17,7 @@
     <!-- Article Font -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet"> -->
 
-    <title>About Us</title>
+    <title>Add A Post</title>
 
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <!-- <script type="text/javascript" src="script/script.js"></script> -->
@@ -38,24 +38,18 @@
         </section>
     </header>
     <article class="container-fluid article">
-        <div class="mb-2" id="info">
-            <h1>Welcome!</h1>
-            <h2>We are a group of MRU students who want to keep you updated on All Things New</h2>
-            <br />
-            <p>
-                If you want to follow us on other platforms, feel free to check out our socials:
-            </p>
-        </div>
-        <div class="mb-2" id="socials">
-            <ul class="list-inline list-menu">
-                <li class="list-inline-item"><a href="https://www.instagram.com/">
-                    <img id="ig" src="img/Instagram_icon.png.webp" alt="Instagram"></a></li>
-                <li class="list-inline-item"><a href="https://twitter.com/?lang=en">
-                    <img id="twitter" src="img/twitter.png" alt="Twitter>"></a></li>
-                <li class="list-inline-item"><a href="https://www.facebook.com/">
-                    <img id="fb" src="img/124010.png" alt="Facebook"></a></li>
-            </ul>
-        </div>
+        <form action="/action_page.php">
+            <div class="form-group">
+              <label for="postTitle">Post Title:</label>
+              <input type="text" class="form-control" id="postTitle"></input>
+            </div>
+            <div class="form-group">
+              <label for="postContent">Post Content:</label>
+              <textarea type="text" class="form-control" id="postContent" rows="4">Enter your post here...</textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit Post</button>
+          </form>
+          
     </article>
     <footer></footer>
 

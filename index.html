@@ -19,11 +19,15 @@
 
     <title>Welcome to the Blog!</title>
 
-    <!-- <link rel="stylesheet" type="text/css" href="style/style.css" />
-    <script type="text/javascript" src="script/script.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <!-- <script type="text/javascript" src="script/script.js"></script> -->
+    <script type="text/javascript" src="AzureFunctions/Comments-Function/index.js"></script>
+    <script type="text/javascript" src="AzureFunctions/Post-Function/index.js"></script>
+    <script type="text/javascript" src="AzureFunctions/User-Function/index.js"></script>
 </head>
 
-<body>
+<body method="POST" action="https://trighttp.azurewebsites.net/api/CommentQuery">
+  <!-- <body> -->
     <header class="page-header p-5 text-center bg-light">
         <h1 class="mb-4">All Things New</h1>
         <section class="navbar-header">
@@ -69,7 +73,7 @@
                   <div class="form-outline mb-4">
                     <input type="text" id="addANote" class="form-control" placeholder="Type comment..." />
                     <!-- <label class="form-label" id="addComment" for="addANote">+ Comment</label> -->
-                    <button class="button" id="addComment" for="addANote">Add Comment</button>
+                    <button class="button" id="addComment" for="addANote" onclick="UserAction()">Add Comment</button>
                   </div>
           
                   <div class="card mb-4">
@@ -79,7 +83,7 @@
                           <p class="small mb-0">Martha</p>
                         </div>
                       </div>
-                      <p>Type your note, and hit enter to add it</p>
+                      <p>Cute dog pic!!!!! 🥰🥰🥰🥰🥰</p>
                       <!-- <label class="form-label" id="editComment" for="editANote">Edit Comment</label> -->
                       <!-- <label class="form-label" id="removeComment" for="removeANote">Remove Comment</label> -->
                       <button class="button" id="editComment" for="editANote">Edit Comment</button>
@@ -92,13 +96,13 @@
           </div>
     </article>
     <footer>
-
+      <button type="button" class="btn btn-primary pull-right"><a href="addPost.html">Add A Post</a></button>
     </footer>
 
     <!-- Optional JavaScript must be at the bottom of the body -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="jsLibs/jquery-3.0.0.min.js"></script>
-    <script src="jsLibs/popper.min.js"></script>
-    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <!-- <script src="jsLibs/jquery-3.0.0.min.js"></script> -->
+    <!-- <script src="jsLibs/popper.min.js"></script> -->
+    <!-- <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script> -->
 </body>
 </html>
